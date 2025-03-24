@@ -1,181 +1,153 @@
 :root {
-    --primary-color: #20CD8D;
-    --secondary-color: #272F32;
-    --white-thing: #F4F4F4;
-    --green-something-ig: #182527;
-    --light-green: #CCF4E5;
+  --primary-color: #20cd8d;
+  --secondary-color: #272f32;
+  --white-thing: #f4f4f4;
+  --green-something-ig: #182527;
+  --light-green: #ccf4e5;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: sans-serif;
-
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
 }
-
 
 body::-webkit-scrollbar {
-    display: none;
+  display: none;
 }
 
-
-
-
-
+body {
+  overflow: hidden;
+}
 
 /* Home section */
 #home .container {
-
-    display: flex;
-    background-color: var(--primary-color);
-    flex-direction: column;
-
+  display: flex;
+  background-color: var(--primary-color);
+  flex-direction: column;
 }
-
-
 
 #home .container .hdr {
-    width: 100%;
-    padding: 90px 0px 10px 100px;
+  width: 100%;
+  padding: 90px 0px 10px 100px;
 }
-
 
 #home .container .hdr h1 {
-    border-left: 4px solid black;
-    width: fit-content;
-    padding-left: 10px;
-    font-size: 30px;
-    color: white;
+  border-left: 4px solid black;
+  width: fit-content;
+  padding-left: 10px;
+  font-size: 30px;
+  color: white;
 }
 
-
 #home .container .main {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
 
 #home .container .main .left {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    row-gap: 20px;
-    height: 90vh;
-
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  row-gap: 20px;
+  height: 90vh;
 }
 
 #home .container .main .left h1 {
-    font-size: 70px;
-    color: white;
+  font-size: 70px;
+  color: white;
 }
 
 #home .container .main .left button {
-    font-size: 30px;
-    border-radius: 30px;
-    border: none;
-    padding: 10px 30px;
-    color: var(--primary-color);
-    background-color: var(--secondary-color);
+  font-size: 30px;
+  border-radius: 30px;
+  border: none;
+  padding: 10px 30px;
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
 }
-
 
 #home .container .main .right img {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
-
 
 /* __________________________________________________________________________ */
 
-
 /*About section  */
 #about .container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 125px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 125px 0px;
 }
 
 #about .container .box {
-    width: 40%;
+  width: 40%;
 
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  align-items: center;
+  justify-content: center;
 
-    display: flex;
-    flex-direction: column;
-    row-gap: 20px;
-    align-items: center;
-    justify-content: center;
-
-    padding: 60px 40px;
-    border-radius: 20px;
-    background-color: var(--white-thing);
+  padding: 60px 40px;
+  border-radius: 20px;
+  background-color: var(--white-thing);
 }
 
 #about .container .box i {
-    font-size: 45px;
+  font-size: 45px;
 }
 
 #about .container .box h1 {
-    color: var(--secondary-color);
-    font-size: 45px;
+  color: var(--secondary-color);
+  font-size: 45px;
 }
 
-
 #about .container .box p {
-    color: var(--secondary-color);
-    font-size: 23px;
-    text-align: center;
+  color: var(--secondary-color);
+  font-size: 23px;
+  text-align: center;
 }
 
 /*_______________________________________________________________________________*/
 
-
-
-
 /* Product Menu */
 
 #product-menu .container {
-
-    display: flex;
-    flex-direction: column;
-    background-color: var(--green-something-ig);
-
+  display: flex;
+  flex-direction: column;
+  background-color: var(--green-something-ig);
 }
 
 #product-menu .container .box1 h1 {
-    padding: 70px 0px;
-    font-size: 50px;
-    color: var(--primary-color);
-    text-align: center;
+  padding: 70px 0px;
+  font-size: 50px;
+  color: var(--primary-color);
+  text-align: center;
 }
-
 
 #product-menu .container .box2 {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
-
 
 #product-menu .container .box2 .card {
-
-    padding: 0px 100px 170px 100px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    row-gap: 40px;
-
+  padding: 0px 100px 170px 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  row-gap: 40px;
 }
 
-
 #product-menu .container .box2 .card img {
-    width: 250px;
-    height: 250px;
-
+  width: 250px;
+  height: 250px;
 }
 
 /* #product-menu .container .box2 .card .inside-box {
@@ -186,305 +158,268 @@ body::-webkit-scrollbar {
 } */
 
 #product-menu .container .box2 .card h1 {
-    border-left: 5px solid var(--primary-color);
-    padding: 0px 10px 10px 30px;
-    font-size: 25px;
-    font-weight: bold;
-    color: var(--primary-color);
+  border-left: 5px solid var(--primary-color);
+  padding: 0px 10px 10px 30px;
+  font-size: 25px;
+  font-weight: bold;
+  color: var(--primary-color);
 }
 
 #product-menu .container .box2 .card p {
-
-    font-size: 15px;
-    padding: 10px 10px 10px 30px;
-    color: var(--white-thing);
+  font-size: 15px;
+  padding: 10px 10px 10px 30px;
+  color: var(--white-thing);
 }
 
 /* ___________________________________________________________________________________ */
 
-
-
-
-
 /* Product Features */
 
-
-
 #product-features .container {
-
-    display: flex;
-    flex-direction: column;
-    background-color: var(--primary-color);
-
+  display: flex;
+  flex-direction: column;
+  background-color: var(--primary-color);
 }
 
 #product-features .container .box1 h1 {
-    padding: 70px 0px;
-    font-size: 50px;
-    color: var(--white-thing);
-    text-align: center;
+  padding: 70px 0px;
+  font-size: 50px;
+  color: var(--white-thing);
+  text-align: center;
 }
-
 
 #product-features .container .box2 {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
-
 
 #product-features .container .box2 .card {
-    padding: 160px 70px;
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    flex-direction: column;
-    row-gap: 40px;
+  padding: 160px 70px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  row-gap: 40px;
 }
-
 
 #product-features .container .box2 .card i {
-    padding-left: 30px;
-    font-size: 90px;
-    color: white;
+  padding-left: 30px;
+  font-size: 90px;
+  color: white;
 }
 
-
-
 #product-features .container .box2 .card h1 {
-    border-left: 5px solid rgba(0, 0, 0, 0.5);
-    padding: 0px 10px 10px 30px;
-    font-size: 30px;
-    font-weight: bold;
-    color: var(--white-thing);
+  border-left: 5px solid rgba(0, 0, 0, 0.5);
+  padding: 0px 10px 10px 30px;
+  font-size: 30px;
+  font-weight: bold;
+  color: var(--white-thing);
 }
 
 #product-features .container .box2 .card p {
-
-    font-size: 20px;
-    padding: 10px 10px 10px 30px;
-    color: var(--secondary-color);
+  font-size: 20px;
+  padding: 10px 10px 10px 30px;
+  color: var(--secondary-color);
 }
 
 /* ------------------------------------------------------------------------------------------ */
 
-
 /* Faq */
 
 #faq .container {
-    background-color: #FFF;
-    padding: 0px 0px 30px 0px;
+  background-color: #fff;
+  padding: 0px 0px 30px 0px;
 }
 
 #faq .container .box1 h1 {
-    padding: 70px 0px 20px 0px;
-    font-size: 50px;
-    color: var(--primary-color);
-    text-align: center;
-
+  padding: 70px 0px 20px 0px;
+  font-size: 50px;
+  color: var(--primary-color);
+  text-align: center;
 }
 
 #faq .container .box2 {
-    display: flex;
-    flex-direction: row;
-    column-gap: 50px;
-    padding: 50px 50px 100px 50px;
+  display: flex;
+  flex-direction: row;
+  column-gap: 50px;
+  padding: 50px 50px 100px 50px;
 }
 
 #faq .container .box2 .card {
-    padding: 50px 30px;
-    border-radius: 25px;
-    background-color: var(--white-thing);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    row-gap: 10px;
+  padding: 50px 30px;
+  border-radius: 25px;
+  background-color: var(--white-thing);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 10px;
 }
 
 #faq .container .box2 .card h1 {
-    color: var(--primary-color);
-    font-size: 23px;
-    text-align: center;
+  color: var(--primary-color);
+  font-size: 23px;
+  text-align: center;
 }
 
 #faq .container .box2 .card p {
-    font-size: 20px;
-    padding: 20px;
-    text-align: center;
-    line-height: 1.5;
-
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+  line-height: 1.5;
 }
 
-
-
 /* ----------------------------------------------------------------- */
-
 
 /* Beta Test Reviews */
 
 #beta-test-reviews .container {
-    background-color: var(--light-green);
-    padding: 0px 0px 30px 0px;
+  background-color: var(--light-green);
+  padding: 0px 0px 30px 0px;
 }
 
 #beta-test-reviews .container .box1 h1 {
-    padding: 90px 0px 0px 0px;
-    font-size: 50px;
-    color: var(--primary-color);
-    text-align: center;
+  padding: 90px 0px 0px 0px;
+  font-size: 50px;
+  color: var(--primary-color);
+  text-align: center;
 }
 
 #beta-test-reviews .container .box2 {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 60px;
-    justify-content: space-between;
-    padding: 100px 100px 50px 100px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 60px;
+  justify-content: space-between;
+  padding: 100px 100px 50px 100px;
 }
 
 #beta-test-reviews .container .box2 .card {
-
-    padding: 50px 30px;
-    border-radius: 25px;
-    background-color: var(--white-thing);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    row-gap: 10px;
+  padding: 50px 30px;
+  border-radius: 25px;
+  background-color: var(--white-thing);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 10px;
 }
 
 #beta-test-reviews .container .box2 .card img {
-
-    width: 75px;
-    height: 75px;
-    border-radius: 50px;
-
+  width: 75px;
+  height: 75px;
+  border-radius: 50px;
 }
 
 #beta-test-reviews .container .box2 .card h1 {
-
-    color: var(--primary-color);
-    border-left: 5px solid var(--primary-color);
-    padding-left: 30px;
-    font-size: 23px;
-    text-align: start;
+  color: var(--primary-color);
+  border-left: 5px solid var(--primary-color);
+  padding-left: 30px;
+  font-size: 23px;
+  text-align: start;
 }
 
 #beta-test-reviews .container .box2 .card p {
-    font-size: 20px;
-    padding: 20px;
-    text-align: center;
-    line-height: 1.5;
-
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+  line-height: 1.5;
 }
 
-
-
-
-
 /* ---------------------------------------------- */
-
 
 /* Contact Us  */
 
 #contact-us .container {
-    background-color: var(--green-something-ig);
-    color: #F4F4F4;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    padding-top: 100px;
-    padding-bottom: 80px;
+  background-color: var(--green-something-ig);
+  color: #f4f4f4;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-top: 100px;
+  padding-bottom: 80px;
 }
 
 #contact-us .container .box1 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-
 #contact-us .container .box2 {
-    display: flex;
-    flex-direction: column;
-    row-gap: 70px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 70px;
 }
 
 #contact-us .container .box2 .tb1 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #contact-us .container .box2 .tb1 h1 {
-    font-size: 50px;
-    color: var(--primary-color);
+  font-size: 50px;
+  color: var(--primary-color);
 }
 
 #contact-us .container .box2 .tb2 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 #contact-us .container .box2 .tb2 .attr {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px;
 }
 
 #contact-us .container .box2 .tb2 .attr h3 {
-    color: var(--white-thing);
-    font-weight: lighter;
-    padding: 5px;
-    font-size: 30px;
+  color: var(--white-thing);
+  font-weight: lighter;
+  padding: 5px;
+  font-size: 30px;
 }
 
 #contact-us .container .box2 .tb2 .attr button {
-
-    background-color: var(--primary-color);
-    border: none;
-    border-radius: 30px;
-    font-size: 20px;
-    padding: 10px 20px;
-    animation: icon infinite linear 2s;
-
+  background-color: var(--primary-color);
+  border: none;
+  border-radius: 30px;
+  font-size: 20px;
+  padding: 10px 20px;
+  animation: icon infinite linear 2s;
 }
 
 #contact-us .container .box2 .tb2 .attr .icon-box {
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 15px;
-    padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  padding: 10px;
 }
 
 #contact-us .container .box2 .tb2 .attr .icon-box i {
-    font-size: 30px;
-    background-color: var(--primary-color);
-    color: #182527;
-    overflow: hidden;
-    border: none;
-    border-radius: 50px;
-    padding: 10px;
-    animation: icon infinite linear 2s;
+  font-size: 30px;
+  background-color: var(--primary-color);
+  color: #182527;
+  overflow: hidden;
+  border: none;
+  border-radius: 50px;
+  padding: 10px;
+  animation: icon infinite linear 2s;
 }
 
 @keyframes icon {
-    0% {
-        transform: scale(1);
-    }
+  0% {
+    transform: scale(1);
+  }
 
-    100% {
-        transform: scale(1.05);
-    }
-
+  100% {
+    transform: scale(1.05);
+  }
 }
