@@ -17,9 +17,9 @@ body::-webkit-scrollbar {
   display: none;
 }
 
-body {
-  overflow: hidden;
-}
+/* body { */
+/* overflow: hidden; */
+/* } */
 
 /* Home section */
 #home .container {
